@@ -7,9 +7,9 @@ import java.time.LocalDateTime
 import java.util.Arrays
 
 class ActivityWindow(
-    private val activities: List<Activity>
+    private val activities: MutableList<Activity>
 ) {
-    constructor(vararg activities: Activity): this(listOf(activities) as List<Activity>)
+    constructor(vararg activities: Activity): this(listOf(activities) as MutableList<Activity>)
 
     fun getStartTimestamp(): LocalDateTime {
         return activities.stream()
