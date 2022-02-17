@@ -1,4 +1,4 @@
-package me.luvram.trycleanarchitecture.application.port.`in`
+package me.luvram.trycleanarchitecture.account.application.port.`in`
 
 interface SendMoneyUseCase {
     fun sendMoney(command: SendMoneyCommand): Boolean

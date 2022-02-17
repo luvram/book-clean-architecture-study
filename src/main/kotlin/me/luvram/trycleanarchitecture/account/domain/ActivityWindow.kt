@@ -1,10 +1,9 @@
-package me.luvram.trycleanarchitecture.domain
+package me.luvram.trycleanarchitecture.account.domain
 
-import me.luvram.trycleanarchitecture.domain.Account.AccountId
-import me.luvram.trycleanarchitecture.domain.Money.Companion
+import me.luvram.trycleanarchitecture.account.domain.Account.AccountId
+import me.luvram.trycleanarchitecture.account.domain.Money.Companion
 import java.lang.IllegalArgumentException
 import java.time.LocalDateTime
-import java.util.Arrays
 
 class ActivityWindow(
     private val activities: MutableList<Activity>

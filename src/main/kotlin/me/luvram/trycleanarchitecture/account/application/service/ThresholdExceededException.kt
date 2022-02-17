@@ -1,6 +1,6 @@
-package me.luvram.trycleanarchitecture.application.service
+package me.luvram.trycleanarchitecture.account.application.service
 
-import me.luvram.trycleanarchitecture.domain.Money
+import me.luvram.trycleanarchitecture.account.domain.Money
 
 class ThresholdExceededException(
     threshold: Money,

@@ -1,6 +1,5 @@
-package me.luvram.trycleanarchitecture.domain
+package me.luvram.trycleanarchitecture.account.domain
 
-import org.springframework.beans.factory.annotation.Value
 import java.time.LocalDateTime
 
 class Account(
@@ -62,7 +61,7 @@ class Account(
         return true
     }
 
-    class AccountId {
+    class AccountId(
         private val value: Long? = null
-    }
+    )
 }

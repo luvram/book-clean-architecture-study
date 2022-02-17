@@ -1,7 +1,7 @@
-package me.luvram.trycleanarchitecture.application.service
+package me.luvram.trycleanarchitecture.account.application.service
 
-import me.luvram.trycleanarchitecture.application.port.out.AccountLock
-import me.luvram.trycleanarchitecture.domain.Account.AccountId
+import me.luvram.trycleanarchitecture.account.application.port.out.AccountLock
+import me.luvram.trycleanarchitecture.account.domain.Account.AccountId
 import org.springframework.stereotype.Component
 
 @Component

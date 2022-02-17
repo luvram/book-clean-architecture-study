@@ -1,4 +1,4 @@
-package me.luvram.trycleanarchitecture.domain
+package me.luvram.trycleanarchitecture.account.domain
 
 import java.time.LocalDateTime
 

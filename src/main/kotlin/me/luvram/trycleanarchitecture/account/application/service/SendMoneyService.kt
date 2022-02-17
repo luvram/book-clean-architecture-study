@@ -1,12 +1,16 @@
-package me.luvram.trycleanarchitecture.application.service
+package me.luvram.trycleanarchitecture.account.application.service
 
-import me.luvram.trycleanarchitecture.application.port.`in`.SendMoneyCommand
-import me.luvram.trycleanarchitecture.application.port.`in`.SendMoneyUseCase
-import me.luvram.trycleanarchitecture.application.port.out.AccountLock
-import me.luvram.trycleanarchitecture.application.port.out.LoadAccountPort
-import me.luvram.trycleanarchitecture.application.port.out.UpdateAccountStatePort
+import me.luvram.trycleanarchitecture.account.application.port.`in`.SendMoneyCommand
+import me.luvram.trycleanarchitecture.account.application.port.`in`.SendMoneyUseCase
+import me.luvram.trycleanarchitecture.account.application.port.out.AccountLock
+import me.luvram.trycleanarchitecture.account.application.port.out.LoadAccountPort
+import me.luvram.trycleanarchitecture.account.application.port.out.UpdateAccountStatePort
+import me.luvram.trycleanarchitecture.common.UseCase
+import org.springframework.transaction.annotation.Transactional
 import java.time.LocalDateTime
 
+@UseCase
+@Transactional
 class SendMoneyService(
     private val loadAccountPort: LoadAccountPort,
     private val accountLock: AccountLock,
