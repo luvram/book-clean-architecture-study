@@ -6,7 +6,6 @@ class Account(
     val id: AccountId?,
     val baselineBalance: Money,
     val activityWindow: ActivityWindow
-
 ) {
 
     companion object {
@@ -62,6 +61,6 @@ class Account(
     }
 
     class AccountId(
-        private val value: Long? = null
+        val value: Long
     )
 }

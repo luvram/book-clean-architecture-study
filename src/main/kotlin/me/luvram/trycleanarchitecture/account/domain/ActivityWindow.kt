@@ -6,7 +6,7 @@ import java.lang.IllegalArgumentException
 import java.time.LocalDateTime
 
 class ActivityWindow(
-    private val activities: MutableList<Activity>
+    val activities: MutableList<Activity>
 ) {
     constructor(vararg activities: Activity): this(listOf(activities) as MutableList<Activity>)
 

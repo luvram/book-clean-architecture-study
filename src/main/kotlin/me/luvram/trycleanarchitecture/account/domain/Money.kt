@@ -3,7 +3,7 @@ package me.luvram.trycleanarchitecture.account.domain
 import java.math.BigInteger
 
 class Money(
-    private val amount: BigInteger
+    val amount: BigInteger
 ) {
 
     companion object {
